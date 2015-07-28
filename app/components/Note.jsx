@@ -1,9 +1,11 @@
 import React from 'react';
 
-export default class Note extends React.Component {
+module.exports = React.createClass({
   render() {
     return (
-      <div>Inside the Note component</div>
+      <div>
+        Inside the note
+      </div>
     );
-  }
-}
+  },
+});

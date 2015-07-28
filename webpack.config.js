@@ -38,6 +38,7 @@ if(TARGET === 'build') {
       loaders: [
         {
           test: /\.jsx?$/,
+          exclude: /(node_modules|bower_components)/,
           loader: 'babel?stage=1',
           include: path.resolve(ROOT_PATH, 'app')
         }
@@ -75,6 +76,7 @@ if(TARGET === 'dev') {
       loaders: [
         {
           test: /\.jsx?$/,
+          exclude: /(node_modules|bower_components)/,
           loaders: ['react-hot', 'babel?stage=1'],
           include: path.resolve(ROOT_PATH, 'app')
         }
