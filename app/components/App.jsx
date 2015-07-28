@@ -1,10 +1,14 @@
 import React from 'react';
-import Note from './Note';
+import Button from './Button';
 
 module.exports = React.createClass({
   render() {
     return (
-      <Note />
+      <Button
+        size="large"
+        block={true}>
+        Radium Button
+      </Button>
     );
   },
 });
